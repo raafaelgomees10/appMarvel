@@ -1,0 +1,132 @@
+/* -------- ESTILIZAÇAO GLOBAIS -------- */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: Open Sans, sans-serif;
+  background-color: black;
+  background-image: url(../img/background.jpeg);
+  background-repeat: no-repeat;
+}
+
+/* -------- BLOCO CABEÇALHO -------- */
+.myHeader{
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  padding: 10px;
+}
+
+/* -------- POSICAO DA DIV-------- */
+.myContainer{
+  width: 100%;
+  height: 100%;
+}
+.myContent{
+  margin: 20px 120px;
+  position: relative;
+}
+
+@media (max-width:768px){
+  .myContent{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; 
+    margin: 15px 20px;
+  }
+  }
+/* -------- BLOCO INPUT -------- */
+.heroSearch{
+  padding: 14px;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  border: none;
+}
+
+/* -------- BLOCO DOS CARDS -------- */
+.marvelHeros{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 9999;
+}
+
+.heroCard{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f7f5e6;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+/* -------- BLOCO BODY DOS CARDS -------- */
+.heroImg{
+  padding: 4px;
+  border: 1px solid #c4c7ca;
+  border-radius: .25rem;
+  height: 280px;
+  width: 275px;
+}
+.cardInfo{
+  padding:20px;
+}
+.heroName{
+  margin-bottom: 15px;
+}
+.btnInfo{
+  margin-top: 20px;
+  height: 35px;
+  width: 80px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btnInfo:hover{
+  background-color: #3e9afd;
+}
+
+/* ------- BLOCO PESQUISA NAO ENCONTRADA ------- */
+.heroNotFound{
+  width: 100%;
+  padding: 10px;
+  color:white;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+ 
+}
+.notFoundLabel{
+  margin-top: -20px; 
+  right: 0;
+}
+.teste{
+  display: flex;
+  justify-content: flex-end;
+}
+.notFoundImg{
+  margin-top: 20px;
+  border-radius: .25rem;
+}
+
+/* -------- BLOCO BACKGROUND BOTTOM -------- */
+#img-logo-fixed{ 
+  position: absolute;
+  margin-left: 63%;
+  z-index: 1;
+  float: right;
+  bottom: 0px;
+  right: -110px;
+  display: none;
+  }
+
+
+    
